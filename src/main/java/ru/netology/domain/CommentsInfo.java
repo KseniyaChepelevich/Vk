@@ -3,65 +3,48 @@ package ru.netology.domain;
 public class CommentsInfo {
     private int count;
     private boolean canPost;
-    private String author;
-    private String dateAndTime;
-    private  String textOfComment;
-    private String image;
-    private int likesCount;
+    private boolean groupsCanPost;
+    private boolean canClose;
+    private boolean canOpen;
+
 
     public int getCount() {
         return count;
-    }
-
-    public boolean isCanPost() {
-        return canPost;
-    }
-
-    public String getAuthor() {
-        return author;
-    }
-
-    public String getDateAndTime() {
-        return dateAndTime;
-    }
-
-    public String getTextOfComment() {
-        return textOfComment;
-    }
-
-    public String getImage() {
-        return image;
-    }
-
-    public int getLikesCount() {
-        return likesCount;
     }
 
     public void setCount(int count) {
         this.count = count;
     }
 
+    public boolean isCanPost() {
+        return canPost;
+    }
+
     public void setCanPost(boolean canPost) {
         this.canPost = canPost;
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
+    public boolean isGroupsCanPost() {
+        return groupsCanPost;
     }
 
-    public void setDateAndTime(String dateAndTime) {
-        this.dateAndTime = dateAndTime;
+    public void setGroupsCanPost(boolean groupsCanPost) {
+        this.groupsCanPost = groupsCanPost;
     }
 
-    public void setTextOfComment(String textOfComment) {
-        this.textOfComment = textOfComment;
+    public boolean isCanClose() {
+        return canClose;
     }
 
-    public void setImage(String image) {
-        this.image = image;
+    public void setCanClose(boolean canClose) {
+        this.canClose = canClose;
     }
 
-    public void setLikesCount(int likesCount) {
-        this.likesCount = likesCount;
+    public boolean isCanOpen() {
+        return canOpen;
+    }
+
+    public void setCanOpen(boolean canOpen) {
+        this.canOpen = canOpen;
     }
 }
